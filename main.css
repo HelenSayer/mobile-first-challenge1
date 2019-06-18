@@ -1,0 +1,25 @@
+./* styles for all devices and mobile */
+.column {
+    float:left; /* will position columns next to each other */
+    width: 100%; /* set width to 100% to make the columns fully wide */ /* global css: same on all devices */ 
+    height: 50px; /* we set the fixed height because floating elements will collapse if empty */ /* global css: same on all devices */ 
+    background-color: #000;
+    margin: 10px 0;
+}
+
+/* styles for tablet */
+@media (min-width: 768px) {
+    .column {
+        background-color: #e84610; /* red */
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+/* styles for desktop */
+@media (min-width: 992px) {
+    /* overwites above margin, width and bg color on 11th line */ 
+    .column {
+        background-color:  #099703; /* blue */
+    }
+}
